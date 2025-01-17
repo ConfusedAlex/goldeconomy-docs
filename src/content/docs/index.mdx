@@ -4,9 +4,11 @@ description: Get started building your docs site with Starlight.
 template: splash
 hero:
   tagline: A simple gold based Economy plugin that just works!
+  image:
+    file: ../../assets/logo.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Documentation
+      link: /installation/
       icon: right-arrow
     - text: View on GitHub
       link: https://github.com/confusedalex/GoldEconomy
@@ -19,16 +21,16 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Features
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Simple" icon="rocket">
+		This Plugin comes with sane defaults so you can get started quickly. No configuration or setup needed.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Configurable" icon="setting">
+		Offers many configuration options to customize the plugin to your liking, like disabling gold drops from mobs or changing the language.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Permissions" icon="puzzle">
+		Comes with permissions to allow or deny certain actions like depositing, withdrawing or viewing balances.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Open Source" icon="heart">
+		Open source licensed under the GPL-3.0 License. Contributions are welcome!
 	</Card>
 </CardGrid>
