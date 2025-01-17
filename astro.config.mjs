@@ -4,9 +4,14 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://thegoldeconomy.confusedalex.dev",
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'TheGoldEconomy',
+			logo: {
+				src: './src/assets/logo.svg',
+				replacesTitle: true,
+			},
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
